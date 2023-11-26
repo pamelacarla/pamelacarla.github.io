@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="icon" type="image/vnd.icon" href="img/">
+  <title>Comprobante de pago</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ </head>
+ <body> 
+
+  <!--- Barra de navegación --->
+
+  <header class="header-top">
+    <div class="logo-and-search">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo de la aseguradora">
+      </div>
+      <div class="sitio">
+          <a href="index.html" target="_self" class="espacio">Ir al Sitio</a>
+          <a href="#/certificates" target="_self" class="espacio">Comprobante de pago</a>
+          <a href="tel:08103333838" target="_self" class="espacio">0810 123 4567</a>
+      </div>
+    </div>
+  </header>
+
+  <!---  Formulario --->
+  
+    <div class="contenedor-con-fondo">
+      <div class="formulario">
+        <form id="paymentForm">
+          <h2>Comprobante de Pago</h2>
+          <div class="form-group">
+            <label for="policyNumber">Número de Póliza:</label>
+            <input type="text" id="policyNumber" name="policyNumber" required>
+          </div>
+          <div class="form-group">
+            <label for="amount">Monto:</label>
+            <input type="text" id="amount" name="amount" required>
+          </div>
+          <div class="form-group">
+            <label for="paymentDate">Fecha de Pago:</label>
+            <input type="date" id="paymentDate" name="paymentDate" required style="border-radius: 20px;
+            padding: 0px 5px;">
+          </div>
+          <div class="form-group">
+            <label for="paymentMethod">Método de Pago:</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+              <option value="creditCard">Tarjeta de Crédito</option>
+              <option value="debitCard">Tarjeta de Débito</option>
+              <option value="bankTransfer">Transferencia Bancaria</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="paymentProof">Adjuntar Comprobante:</label>
+            <input type="file" id="paymentProof" name="paymentProof" accept=".pdf,.jpg,.png" required>
+          </div>
+          <button id="paymentDate" submit style=" background-color: rgb(21, 88, 121);
+          border-radius: 20px;
+          padding: 2px 7px;
+          color: aliceblue">Enviar</button>
+        </form>
+     </div>
+    </div>
+
+  <!--- Footer --->
+
+  <style>
+  .footer {
+   background-color: #3191c1;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  }
+    
+  .logos {
+   flex: 1;
+   text-align: center;
+  }
+    
+  .logos img {
+   max-width: 100px;
+   display: block;
+   margin: 0 auto;
+  }
+    
+  .contact-info {
+   flex: 1;
+   text-align: left;
+  }
+    
+  .contact-info p {
+   margin: 5px 0;
+   color: #fff;
+  }
+    
+  .social-icons {
+   flex: 1;
+   display: flex;
+   justify-content: flex-end;
+   font-size: 20px;
+  }
+    
+  .social-icons a {
+   color: #fff;
+   text-decoration: none;
+    margin-left: 10px;
+  }
+    
+  .social-icons a:first-child {
+   margin-left: 0;
+  }
+  </style>
+    
+    <footer class="footer">
+      <div class="contact-info">
+        <p>Teléfono: 0810 333 1234</p>
+        <p>Email: info@aseguradora.com</p>
+        <p>Dirección: Calle Av. Libertador 2000, Ciudad de San Juan</p>
+      </div>
+      <div class="logos">
+        <img src="img/logo.png" alt="Logo de la aseguradora">
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </footer>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

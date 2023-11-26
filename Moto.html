@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="icon" type="image/vnd.icon" href="img/favicon.ico">
+  <title>Moto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body> 
+
+  <!--- Barra de navegación --->
+
+  <header class="header-top">
+    <div class="logo-and-search">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo de la aseguradora">
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Buscar">
+        <button class="account-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/></svg>
+          <span class="person-icon"></span> <a class="form" href="Cliente.html" target="_blank">Ingresar</a>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <header class="header-bottom">
+    <nav>
+      <ul>
+        <li><a href="index.html">Seguros</a>
+          <ul class="submenu">
+            <li><a href="Auto.html">Auto</a></li>
+            <li><a href="Moto.html">Moto</a></li>
+            <li><a href="Hogar.html">Hogar</a></li>
+            <li><a href="Vida.html">Vida</a></li>
+            <li><a href="Accidentes personales.html">Accidentes Personales</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Siniestros</a>
+          <ul class="submenu">
+            <li><a href="Soy cliente.html">Soy Cliente</a></li>
+            <li><a href="Buscador de talleres.html">Red de Talleres</a></li>
+          </ul>
+        </li>
+        <li><a href="Contactos.html">Contacto</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Comunidad.html">Comunidad</a></li>
+      </ul>
+    </nav>
+
+  </header> 
+
+  <!--- Planes de Autos --->
+
+  <div class="container" >
+    <div class="card" style="display: block;"> 
+      <img src="img/moto1.jpg">
+      <div class="contenido">
+        <h3>Responsabilidad Civil</h3>
+        <h5>¿Qué me cubre este plan?</h5> <br>
+        <p> Cubre los reclamos que el asegurado (y/o conductor), puedan recibir como consecuencia de los daños causados a terceras personas o a sus bienes, 
+          hasta el límite de cobertura que figura en la póliza y en los términos de esta.
+          Disponible para motos de uso particular o comercial sin límite de antigüedad. <br>
+        </p>
+        <a href="Planes.html">Cotizar</a>
+      </div>
+    </div> 
+      
+    <div class="card">
+      <img src="img/Moto2.jpg">
+      <div class="contenido">
+        <h3>RC + Incendio</h3>
+        <h5>¿Qué me cubre este plan?</h5> <br>
+        <p>Cubre los reclamos que el asegurado (y/o conductor), puedan recibir como consecuencia de los daños causados a terceras personas o a sus bienes, 
+          hasta el límite de cobertura que figura en la póliza y en los términos de esta.
+          Adicionalmente se cubre la pérdida total como consecuencia de incendio.
+          Disponible para motos de uso particular o comercial sin límite de antigüedad.
+        </p>
+        <a href="Planes.html">Cotizar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/moto3.jpg">
+      <div class="contenido">
+        <h3>RC + Incendio + Robo</h3>
+        <h5>¿Qué me cubre este plan?</h5> <br>
+        <p>A la cobertura de Responsabilidad Civil se le adicionan coberturas como consecuencia del Robo y/o Hurto total de la moto y cobertura de incendio donde se produzca pérdida total.
+          Disponible para motos de uso particular o comercial hasta quince años de antigüedad.
+        </p>
+        <a href="Planes.html">Cotizar</a>
+      </div>
+    </div>
+  </div>
+
+  <!--- Footer --->
+
+  <style>
+  .footer {
+   background-color: #3191c1;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  }
+    
+  .logos {
+   flex: 1;
+   text-align: center;
+  }
+    
+  .logos img {
+   max-width: 100px;
+   display: block;
+    margin: 0 auto;
+  }
+    
+  .contact-info {
+   flex: 1;
+   text-align: left;
+  }
+    
+  .contact-info p {
+   margin: 5px 0;
+   color: #fff;
+  }
+    
+  .social-icons {
+   flex: 1;
+   display: flex;
+   justify-content: flex-end;
+   font-size: 20px;
+  }
+    
+  .social-icons a {
+   color: #fff;
+   text-decoration: none;
+    margin-left: 10px;
+  }
+    
+  .social-icons a:first-child {
+   margin-left: 0;
+  }
+    </style>
+    
+    <footer class="footer">
+      <div class="contact-info">
+        <p>Teléfono: 0810 333 1234</p>
+        <p>Email: info@aseguradora.com</p>
+        <p>Dirección: Calle Av. Libertador 2000, Ciudad de San Juan</p>
+      </div>
+      <div class="logos">
+        <img src="img/logo.png" alt="Logo de la aseguradora">
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    const myCarousel = document.getElementById('carouselExampleCaptions');
+    const carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 5000,
+      wrap: true 
+    });
+  </script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

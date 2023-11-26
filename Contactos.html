@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="icon" type="image/vnd.icon" href="img/favicon.ico">
+  <title>Contactos</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+ <body style="background: #ededed;"> 
+
+  <!--- Barra de navegación --->
+
+  <header class="header-top">
+    <div class="logo-and-search">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo de la aseguradora">
+      </div>
+      
+    </div>
+  </header>
+
+  <header class="header-bottom">
+    <nav>
+      <ul>
+        <li><a href="index.html">Seguros</a>
+          <ul class="submenu">
+            <li><a href="Auto.html">Auto</a></li>
+            <li><a href="Moto.html">Moto</a></li>
+            <li><a href="Hogar.html">Hogar</a></li>
+            <li><a href="Vida.html">Vida</a></li>
+            <li><a href="Accidentes personales.html">Accidentes Personales</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Siniestros</a>
+          <ul class="submenu">
+            <li><a href="Soy cliente.html">Soy Cliente</a></li>
+            <li><a href="Buscador de talleres.html">Red de Talleres</a></li>
+          </ul>
+        </li>
+        <li><a href="Contactos.html">Contacto</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li><a href="Comunidad.html">Comunidad</a></li>
+      </ul>
+    </nav>
+
+  </header> <br><br><br>
+
+  <!--- Planes --->
+  
+  <style>
+
+h1 {
+  text-align: center;
+}
+
+.form-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Estilos para el formulario */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: calc(100% - 10px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(21, 88, 121);
+  color: #fff;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+  </style>
+
+<h1>¿Cómo podemos ayudarte?</h1> <br>
+  <div class="form-container">
+    <form>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre">
+        </div>
+        <div class="form-group">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono">
+        </div>
+        <div class="form-group">
+          <label for="tipoDocumento">Tipo de documento</label>
+          <select id="tipoDocumento" name="tipoDocumento">
+            <option value="">Seleccionar</option>
+            <option value="dni">DNI</option>
+            <option value="pasaporte">Pasaporte</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="numeroDocumento">Nro. Documento</label>
+          <input type="text" id="numeroDocumento" name="numeroDocumento">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="provincia">Provincia</label>
+          <select id="provincia" name="provincia">
+            <option value="">Seleccionar</option>
+            <option value="cordoba">San Juan</option>
+            <option value="buenosAires">Buenos Aires</option>
+            <option value="cordoba">Córdoba</option>
+            
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="localidad">Localidad</label>
+          <select id="localidad" name="localidad">
+            <option value="">Seleccionar</option>
+            <option value="cordoba">Capital</option>
+            <option value="cordoba">Chimbas</option>
+            <option value="cordoba">Rivadavia</option>
+
+          </select>
+        </div>
+        <div class="form-group full-width">
+          <label for="areaEmpresa">Seguro de Retiro</label>
+          <select id="areaEmpresa" name="areaEmpresa">
+            <option value="">Seleccionar</option>
+            <option value="cordoba">Seguro de ART</option>
+            <option value="cordoba">Seguro de automovil</option>
+            <option value="cordoba">Seguro de vida</option>
+           
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group full-width">
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" name="comentarios" rows="5"></textarea>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <button type="submit">Enviar Consulta</button>
+        </div>
+      </div>
+    </form>
+  </div> <br>
+
+  <!--- Footer --->
+
+  <style>
+  .footer {
+   background-color: #3191c1;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  }
+    
+  .logos {
+   flex: 1;
+   text-align: center;
+  }
+    
+  .logos img {
+   max-width: 100px;
+   display: block;
+   margin: 0 auto;
+  }
+    
+  .contact-info {
+   flex: 1;
+   text-align: left;
+  }
+    
+  .contact-info p {
+   margin: 5px 0;
+   color: #fff;
+  }
+    
+  .social-icons {
+   flex: 1;
+   display: flex;
+   justify-content: flex-end;
+   font-size: 20px;
+  }
+    
+  .social-icons a {
+   color: #fff;
+   text-decoration: none;
+   margin-left: 10px;
+  }
+    
+  .social-icons a:first-child {
+   margin-left: 0;
+  }
+    </style>
+    
+    <footer class="footer">
+      <div class="contact-info">
+        <p>Teléfono: 0810 333 1234</p>
+        <p>Email: info@aseguradora.com</p>
+        <p>Dirección: Calle Av. Libertador 2000, Ciudad de San Juan</p>
+      </div>
+      <div class="logos">
+        <img src="img/logo.png" alt="Logo de la aseguradora">
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </footer>
+  
+ </body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
