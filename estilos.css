@@ -160,8 +160,7 @@ color: white;
 
 .gestion-online {
 position:absolute;
-right: 10px; 
-}
+right: 10px; }
 
 .gestion-link {
 color: white;
@@ -656,3 +655,84 @@ color: #ededed;
 
 @media screen and (min-width: 1025px) {
 } 
+/* Estilos previos aquí */
+
+/* Nuevos estilos para responsividad */
+@media screen and (max-width: 768px) {
+  .logo img {
+    margin-left: 0;
+  }
+
+  .search {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .account-button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .header-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 10px 0;
+    position: initial;
+  }
+
+  nav ul ul {
+    position: initial;
+    width: 100%;
+    text-align: center;
+  }
+
+  .carousel-item img {
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .card {
+    width: calc(100% - 40px);
+    margin: 10px 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .logos,
+  .social-icons {
+    text-align: center;
+    margin: 10px 0;
+    flex: initial;
+  }
+
+  .footer-links ul li a {
+    padding-left: 0;
+  }
+
+  .nosotros,
+  .contenido {
+    padding: 20px;
+  }
+
+  .modal-button {
+    top: 50%;
+  }
+}
