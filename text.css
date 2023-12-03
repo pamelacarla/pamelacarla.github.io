@@ -98,10 +98,10 @@ text-align: center;
 }
 
 .left-side img {
-  max-width: 100%;
+  max-width: 65%;
   height: auto;
   display: block;
-  margin-left: 70px
+  margin-left: 65px
 }
 
 .right-side {
@@ -154,7 +154,7 @@ h4 {
   }
 
   .bottom-images img {
-    width: 40%; 
+    width: 55%; 
     margin-bottom: 15px;
     
   }
